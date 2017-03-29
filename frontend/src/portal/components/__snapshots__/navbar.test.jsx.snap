@@ -1,0 +1,54 @@
+exports[`test navbar renders correctly 1`] = `
+<nav
+  className="navbar navbar-inverse navbar-fixed-top"
+  role="navigation">
+  <div
+    className="container">
+    <div
+      className="container">
+      <div
+        className="navbar-header">
+        <button
+          className="navbar-toggle collapsed"
+          onClick={[Function]}
+          type="button">
+          <span
+            className="sr-only">
+            Toggle navigation
+          </span>
+          <span
+            className="icon-bar" />
+          <span
+            className="icon-bar" />
+          <span
+            className="icon-bar" />
+        </button>
+      </div>
+      <a
+        className="navbar-brand"
+        href="/">
+        Phaceology
+      </a>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse">
+        <ul
+          className="nav navbar-nav navbar-right"
+          role={null}>
+          <li
+            className=""
+            role="presentation"
+            style={undefined}>
+            <a
+              href="#"
+              onClick={[Function]}
+              role="button">
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

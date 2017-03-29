@@ -1,0 +1,771 @@
+body {
+
+
+/*    font-family: 'Open Sans', sans-serif; */
+
+    font-family: 'Montserrat', sans-serif;
+    background:#ef7b21;
+    color:white;
+}
+
+/** Tell Bootstrap to always show the toggle menu. From
+http://stackoverflow.com/questions/21860263/bootstrap-3-show-collapsed-navigation-for-all-screen-sizes
+*/
+
+.navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-collapse.collapse.in {display: block !important; }
+
+
+/** Loader animation. From: http://www.w3schools.com/howto/howto_css_loader.asp */
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position:fixed;
+    top:33%;
+    left:50%;
+    margin-top:-60px;
+    margin-left:-60px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/*****/
+
+a {
+    color:white;
+}
+
+.navbar,.navbar-default {
+    color:white;
+    background:#f58025;
+    border:none;
+    margin-bottom:0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.lesson-module-category, .lesson-list-lower-header {
+    color:#f58025;
+    background:white;
+    min-height:35px;
+    line-height: 35px;
+    font-size: 13px;
+    font-family: "Montserrat";
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+
+.lesson-module-category-percent {
+    text-align:right;
+}
+
+.lesson-module, .lesson {
+    color:white;
+    background:#f58025;
+    min-height:50px;
+    line-height: 50px;
+    font-size: 13px;
+    font-family: "Open Sans";
+}
+
+.lesson-module a, .linked-row a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:white;
+}
+
+.inverse-linked-row a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:#f58025;
+}
+
+
+.lesson-module-percent, .lesson-arrow-col, .lesson-check {
+    text-align:right;
+    font-family: "Montserrat";
+    font-size:13px;
+}
+
+.lesson-module-100-percent {
+    background:#d9701f;
+}
+
+.lesson-module-arrow, .lesson-arrow {
+    width:7.5px;
+    height:15px;
+}
+
+/* The bottom border of the lesson module rows. Done like this because it doesn't reach all the way across. */
+div.lesson-module:after, div.lesson:after {
+    background:#e06f18;
+    position: absolute; 
+    left: 5%;
+    height: 1px;
+    width: 90%;
+}
+
+.navbar-toggle {
+    border:none;
+}
+
+.user-badge {
+    background:#e3721a; /*ed7a20; */
+    color:white;
+    position:relative;
+    height:125px;
+}
+
+.user-name {
+    font-size: 13px;
+    font-family: "Montserrat";
+    text-transform:uppercase;
+    font-weight: bold;
+    margin-top:23px;
+}
+
+.user-division {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: white;
+  font-weight: normal;
+  font-size:12px;
+}
+
+.user-badge-profile-pic {
+    text-align:right;
+}
+
+.user-percent-row {
+    height:60px;
+}
+
+.user-percent {
+  font-size: 40px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-top:0;
+  padding-left:0;
+}
+
+.user-percent-sign {
+    font-size:20px;
+    vertical-align:16px;
+}
+
+.user-percent-label {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top:12px;
+  line-height:1;
+  padding-left:0;
+  padding-right:25px;
+}
+
+.user-badge-divider {
+    background:#e06f18;
+    width:100%;
+    height:3px;
+    position:absolute;
+    top:60px;
+    z-index:0;
+}
+
+
+.profile-pic {
+    vertical-align:middle;
+    margin-top:15px;
+    width:92px;
+    height:92px;
+}
+
+.navbar-brand {
+    background:url(../img/costavidalogo.png) center / contain no-repeat;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  width: 126px; /* no height needed ... image will resize automagically */
+}
+
+
+/*******************************************************************************
+ * Employee Menu
+ *******************************************************************************/
+
+.employee-menu {
+    position:fixed;
+    top:50px;
+    right:0;
+    height:100%;
+    width:210px;
+    background:white;
+    z-index:100;
+    padding:0;
+    color:#e06f18;
+}
+
+.employee-menu .row {
+    padding:0;
+    margin: 0;
+}
+
+.employee-menu-header {
+    height:192px;
+    text-align:center;
+    background:#f2f2f2;
+    padding-top:25px;
+}
+
+
+.employee-menu .profile-pic {
+    height:58px;
+    width:58px;
+    margin-bottom:13px;
+}
+
+.profile-pic-small {
+    height:38px;
+    width:38px;
+}
+
+.employee-menu-user-name {
+    font-family: "Montserrat";
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size:10pt;
+}
+
+.employee-menu-user-division {
+    font-family: "Open Sans";
+    font-weight:lighter;
+    font-size:9pt;
+}
+
+.employee-menu-icon {
+    width:24px;
+    height:24px;
+    margin-right:6px;
+}
+
+.employee-menu-item {
+    cursor:pointer;
+    height:39px;
+    border-bottom:1px solid #d3d3d3;
+    line-height:39px;
+    padding-left:14px;
+}
+
+.employee-menu-item a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:#e06f18;
+}
+
+/********************************************************************************
+ * Settings page
+ ********************************************************************************/
+
+.employee-settings-page {
+    background:#ef7b21;
+    color:white;
+}
+
+.employee-settings-profile-pic-row {
+    height:135px;
+    background:#d8701f;
+    margin:22px auto 30px; /* 26px */
+    max-width:600px;
+}
+
+.employee-settings-profile-pic-label {
+    margin-top:22px;
+    text-align:center;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.btn-default {
+    color:white;
+    background:#ef7b21;
+    height:25px;
+    border-radius:12px;
+    font-size:8pt;
+    font-family: "Open Sans";
+    text-align:center;
+    border:none;
+    padding:0 20px;
+}
+
+.employee-settings-profile-pic-button {
+    margin-top:10px;
+    text-align:center;
+}
+
+.employee-settings-item-label {
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	height: 25px;
+	font-size: 10pt;
+	margin-top:20px;
+}
+
+.employee-settings-item-value {
+	font-size: 11pt;
+	font-family: "Open Sans";
+	height: 30px;
+}
+
+.employee-settings-item-value div {
+    border-bottom: 1px solid white;
+    padding-bottom:8px;
+}
+
+
+.check {
+    width: 19px;
+    height: 19px;
+    padding: 4px;
+    background-color: #ef7b21;
+    border-radius: 50%;
+    vertical-align: middle;
+    display:inline-block;
+}
+
+/********************************************************************************
+ * Lesson List
+ ********************************************************************************/
+
+.lesson-list-header {
+    min-height:75px;
+    background-color:#e6741c;
+}
+
+.lesson-list-header-back {
+    /* Flip the image. From: https://css-tricks.com/snippets/css/flip-an-image/ */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+    width:10px;
+    height:20px;
+}
+
+.lesson-list-header .module-name {
+    font-size:13pt;
+    line-height:75px;
+}
+
+.lesson-list-header .back-arrow {
+    margin-top:27px;
+}
+
+.lesson-list-header .percent-complete {
+    margin-top:18px;
+}
+
+.lesson-list-header .percent-complete .number {
+    text-align:right;
+    font-size:13pt;
+}
+
+.lesson-list-header .percent-complete .text {
+    text-align:right;
+    font-size:10pt;
+    text-transform:uppercase;
+}
+
+.lesson-list-lower-header {
+    text-align:right;
+}
+
+/********************************************************************************
+ * Lesson Detail Page.
+ ********************************************************************************/
+
+.lesson-detail-page {
+    background:white;
+    min-height:100%;
+}
+
+.lesson-detail-page .video {
+    width:100%;
+    max-width:640px;
+    margin:0 auto;
+}
+
+.lesson-detail-page .video-wrapper {
+    text-align:center;
+}
+
+.lesson-detail-page .text-row {
+    margin:32px 25px 0 25px;
+}
+
+.lesson-detail-page .text {
+    background:#ef7b21;
+    font-size: 9pt;
+    font-family: "Open Sans";
+}
+
+.lesson-detail-page .text h3, .practicum-lesson-detail-page h3 {
+    font-size: 9pt;
+    font-family: "Montserrat";
+    text-transform:uppercase;
+    text-align:left;
+}
+
+.lesson-detail-page ul {
+    padding-left:10px;
+}
+
+.lesson-detail-page li {
+    margin-bottom:10px;
+}
+
+.lesson-detail-page .button-area, .quiz-detail-page .button-area {
+    padding-top:40px;
+    padding-bottom:40px;
+    text-align:center;
+}
+
+.lesson-detail-page .btn-default, .quiz-detail-page .btn-default {
+    padding:0 50px;
+    line-height:25px;
+}
+
+/* Quiz detail page */
+.quiz-detail-page {
+    background:white;
+    min-height:100%;
+    color:#f58025;
+}
+
+.quiz-detail-page .header, .reports-lesson-detail-page .lesson-header {
+    font-size: 13px;
+    font-family: "Montserrat";
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.quiz-detail-page .header {
+	font-size: 14px;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	text-align: center;
+	height: 48px;
+	line-height: 48px;
+}
+
+.quiz-detail-page .question {
+    color:black;
+    padding-top:25px;
+    font-family:"Open Sans";
+    font-size:16pt;
+    font-weight:lighter;
+    min-height:115px;
+    text-align:center;
+}
+
+.quiz-detail-page .answer-row {
+    min-height:30px;
+    line-height:30px;
+    margin-bottom:5px;
+    margin-left:8px;
+    margin-right:8px;
+    font-family:"Open Sans";
+    font-size:9pt;
+}
+
+.quiz-detail-page .answer {
+    background:#f58025;
+    color:white;
+    cursor:pointer;
+}
+
+.quiz-detail-page .unchosen-answer {
+    background:#e1e1e1;
+}
+
+.announcement {
+    margin:44px auto;
+    text-align:center;
+}
+
+.announcement .label {
+    padding:19px 53px;
+    border-radius:0;
+    font-size:11pt;
+    font-weight:normal;
+}
+
+.announcement .label-success {
+    background:#1a9ad6;
+    color:#1274a2;
+}
+
+.announcement .label-default {
+    background:#e1e1e1;
+    color:#b7b7b7;
+}
+
+
+.lesson-passed-heading {
+	text-align: center;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	font-size: 21pt;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 55px;
+}
+
+.lesson-passed-image {
+    text-align:center;
+}
+
+.lesson-passed-image img {
+    height:160px;
+}
+
+.lesson-passed-message-1 {
+	text-align: center;
+	font-size: 8pt;
+	font-family: "Open Sans";
+	margin-top: 45px;
+	margin-bottom: 4px;
+}
+
+.lesson-passed-message-2 {
+	text-align: center;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	font-size: 16pt;
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+
+.inverse {
+    background:white;
+    color:#f58025;
+}
+
+.two-part-row {
+    min-height:77px;
+    border-bottom:1px solid #e5e5e5;
+}    
+
+.row-header {
+	font-family: "Montserrat";
+	font-size: 14pt;
+	margin-left: 27px;
+	margin-top: 14px;
+}
+
+.row-detail {
+    font-family:"Open Sans";
+    font-size:12pt;
+    margin-left:27px;
+}
+
+.arrow-col {
+    min-height:57px;
+    line-height:57px;
+}
+.arrow-col img {
+    height:18px;
+}
+
+.page-header-row {
+    text-align:center;
+    font-family:"Montserrat";
+    text-transform:uppercase;
+    min-height:57px;
+    line-height:57px;
+    font-size:12pt;
+    font-weight:bold;
+    border-bottom:4px solid #f58025;
+}
+
+/* ReportsDivisionDetailPage */
+.reports-division-detail-page .division-header {
+    text-align:center;
+}
+
+.reports-division-detail-page .nav-tabs li {
+    width:50%;
+    text-align:center;
+    font-family:"Open Sans";
+    font-size:13pt;
+}
+
+.reports-division-detail-page .nav-tabs li a {
+    border:none;
+    border-radius:0;
+    color:white;
+    background-color:#e1e1e1;
+    margin:none;
+}
+
+.reports-division-detail-page .nav-tabs li.active a {
+    background-color:#f58025;
+}
+
+.reports-division-detail-page .employees-header {
+    font-family:"Montserrat";
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size:9pt;
+    min-height:35px;
+    line-height:35px;
+    text-align:right;
+}
+
+
+.reports-division-detail-page .employee .profile-pic, .practicum-division-list-page .profile-pic {
+    height:40px;
+    width:40px;
+    margin-top:13px;
+    margin-left:26px;
+}
+
+.reports-division-detail-page .employee .name, .practicum-division-list-page .employee .name {
+    font-family:"Montserrat";
+    font-size:11pt;
+    margin-top:20px;
+}
+
+.reports-division-detail-page .employee .role, .practicum-division-list-page .employee .role {
+    font-family:"Open Sans";
+    font-size:10pt;
+}
+
+.reports-division-detail-page .employee .percent-complete {
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 23pt;
+	line-height: 75px;
+}
+
+.reports-division-detail-page .employee {
+    min-height:67px;
+    border-bottom:1px solid #d3d3d3;
+}
+
+.practicum-division-list-page .employee {
+    cursor:pointer;
+}
+
+.practicum-division-list-page .employee .arrow {
+
+}
+
+.practicum-division-list-page .employee-expanded .arrow-col img, .arrow-col-expanded img {
+    transform:rotate(90deg);
+}
+
+.practicum-division-list-page a.start-button {
+	text-transform: uppercase;
+	border: 1px solid white;
+	font-family: "Montserrat";
+	font-size: 7pt;
+	padding: 1px 2px;
+}
+
+.practicum-lesson-detail-page ul {
+    color:black;
+    font-family:"Open Sans";
+    font-weight:lighter;
+    font-size:10pt;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.practicum-lesson-detail-page li {
+    margin-bottom:15px;
+    padding-left: 1em; 
+    text-indent: -10px;;
+}
+
+.practicum-lesson-detail-page li::before {
+    content: "\002022 ";
+    color: #1a9ad6;
+    display:inline-block;
+    width:2px;
+    margin-left:8px;
+}
+
+
+.practicum-lesson-detail-page .buttons-row {
+    text-align:center;
+    padding-bottom:10px;
+}
+
+.practicum-lesson-detail-page .btn {
+    border-radius:0;
+    margin-right:21px;
+}
+
+.ph-row {
+    min-height:45px;
+    line-height:45px;
+}
+
+.ph-tab-row {
+    font-family:"Open Sans";
+    font-size:9pt;
+    cursor:pointer;
+    border-bottom:2px solid white;
+    text-align:center;
+}
+
+.ph-gray {
+    background:#e1e1e1;
+}
+
+.reports-division-detail-page .module {
+    cursor:pointer;
+}

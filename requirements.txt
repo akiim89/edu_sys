@@ -1,0 +1,17 @@
+# Django itself
+Django==1.10.5
+
+# Framework for REST
+djangorestframework==3.5.3
+
+# Facebook SDK
+facebook-sdk==2.0.0
+
+# For integrating Django with Webpack: https://github.com/owais/django-webpack-loader
+django-webpack-loader==0.4.1
+
+# Python docutils, used by Django admin docs.
+docutils==0.13.1
+
+# PostgreSQL
+psycopg2==2.6.2

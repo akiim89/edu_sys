@@ -1,0 +1,12 @@
+libssl-dev
+nodejs
+python-pip
+libffi-dev
+python-dev
+npm
+postgresql
+postgresql-contrib
+libpq-dev
+fabric
+python3-dev
+nodejs-legacy

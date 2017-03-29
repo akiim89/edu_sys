@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+VENV="$SCRIPTPATH/../env/"
+REQFILE="$SCRIPTPATH/../requirements.txt"
+REQFILE_DEV="$SCRIPTPATH/../requirements-dev.txt"
+
+echo venv dir is $VENV
+
+rm -rf $VENV
+
+virtualenv --prompt='(phaceology)' --python=python3 $VENV
+source $VENV/bin/activate
+pip install -r $REQFILE
+pip install -r $REQFILE_DEV
+cp "$REQFILE" "$VENV"
